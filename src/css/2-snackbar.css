@@ -1,7 +1,5 @@
-@import url('./index.css');
-
-
-
+@import url('./reset.css');
+@import url('./header.css');
 
 .form {
     background-color: #ffffff;
@@ -9,34 +7,32 @@
     color: #2e2f42;
     line-height: 24px;
     letter-spacing: 0.64px;
-    margin: 0 auto;
-    padding: 40px;
+    padding-left: 156px;
+    padding-top: 36px;
     border-radius: 16px;
 }
 
 .form>label {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    color: #2e2f42;
     line-height: 24px;
     width: 360px;
-    margin: 0 auto;
+    color: #2e2f42;
+    flex-direction: column;
+    gap: 8px;
+
 }
 
 .form>label>input {
-    width: 360px;
-    height: 40px;
     border-radius: 4px;
+    font-family: Montserrat;
     border: 1px solid #808080;
-    outline: none;
     margin-bottom: 16px;
     padding: 8px 16px;
     color: #2e2f42;
-    font-family: var(--font-family);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+    outline: none;
     line-height: 24px;
     letter-spacing: 0.64px;
 }
@@ -52,8 +48,8 @@
 .form>fieldset {
     border-radius: 4px;
     border: 1px solid #808080;
-    width: 360px;
-    margin: 0 auto 24px;
+    width: 334px;
+    margin-bottom: 24px;
 }
 
 .form>fieldset:hover {
@@ -65,22 +61,26 @@
 }
 
 .form>fieldset>label>input {
-    margin: 24px 0 8px 48px;
+    margin: 24px 0 8px 58px;
+}
+
+input[type='radio'] {
+    transform: scale(1.5);
 }
 
 .form>button {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
     display: flex;
     width: 360px;
     padding: 8px 16px;
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-family: var(--font-family);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.04em;
     border-radius: 8px;
     background: #4e75ff;
     border: none;
@@ -88,8 +88,4 @@
 
 .form>button:hover {
     background-color: #6c8cff;
-}
-
-input[type='radio'] {
-    transform: scale(1.5);
 }
