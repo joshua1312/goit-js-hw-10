@@ -7,9 +7,9 @@ import iziToast from "izitoast";
 // Додатковий імпорт стилів
 import "izitoast/dist/css/iziToast.min.css";
 
-function query(selector) {
-    return document.querySelector(selector);
-}
+// function query(selector) {
+//     return document.querySelector(selector);
+// }
 
 
 const elementsDOM = [
@@ -18,11 +18,11 @@ const elementsDOM = [
     { elDOM: '[data-minutes]', value: '00' },
     { elDOM: '[data-seconds]', value: '00' }
 ];
-const datetimeInpEL = query('#datetime-picker');
-const btnStart = query('[data-start]');
+const datetimeInpEL = document.querySelector('#datetime-picker');
+const btnStart = document.querySelector('[data-start]');
 
 const elements = elementsDOM.map(item => ({
-    elDOM: query(item.elDOM),
+    elDOM: document.querySelector(item.elDOM),
     value: item.value
 }));
 

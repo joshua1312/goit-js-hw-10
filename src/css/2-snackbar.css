@@ -1,21 +1,6 @@
-.field {
-    text-align: center;
-}
+@import url('./index.css');
 
-.value {
-    color: #2e2f42;
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: 1.6px;
-    font-family: var(--font-family);
-}
 
-.label {
-    font-family: var(--font-family);
-    color: #2e2f42;
-    line-height: 24px;
-    text-transform: uppercase;
-}
 
 
 .form {

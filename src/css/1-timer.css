@@ -1,33 +1,31 @@
+@import url('./reset.css');
+@import url('./header.css');
+
 .reverse-timer-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 36px;
-    gap: 32px;
+    padding-left: 156px;
+    padding-top: 36px;
 }
 
-.conteiner-inp-btn {
+.container-inp-btn {
+    width: 355px;
+    height: 40px;
     display: flex;
-    align-items: center;
     gap: 8px;
+    margin-bottom: 36px;
 }
-
 
 #datetime-picker {
-    width: 272px;
-    height: 40px;
+    width: 258px;
     border-radius: 4px;
+    padding-left: 16px;
     border: 1px solid #808080;
-    padding: 8px 16px;
     outline: none;
     color: #2e2f42;
-    font-family: var(--font-family);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: .64px;
+    letter-spacing: 0.64px;
 }
 
 #datetime-picker:hover {
@@ -47,8 +45,8 @@
 
 [data-start] {
     color: #fff;
-    font-family: var(--font-family);
     font-size: 16px;
+
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
@@ -56,8 +54,8 @@
     border-radius: 8px;
     background: #4e75ff;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     border: none;
     padding: 8px 16px;
     width: 75px;
@@ -77,7 +75,28 @@
     background-color: #fff;
     display: flex;
     gap: 24px;
-    width: 353px;
+    width: 346px;
     align-items: center;
     justify-content: center;
+
+}
+
+.field {
+    text-align: center;
+}
+
+.value {
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    font-size: 40px;
+    color: #2e2f42;
+}
+
+.label {
+    text-transform: uppercase;
+    color: #2e2f42;
+    line-height: 24px;
 }
